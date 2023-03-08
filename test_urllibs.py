@@ -34,9 +34,7 @@ def soup2(monkeypatch):
 def test_soup3(url, soup3):
     from gi.repository import Soup
 
-    mes = Soup.Message.new_from_encoded_form("GET",
-                                             url,
-                                             "")
+    mes = Soup.Message.new_from_encoded_form("GET", url, "")
 
     ses = Soup.Session()
     ses.send_and_read(mes)
