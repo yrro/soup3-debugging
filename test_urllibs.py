@@ -11,7 +11,9 @@ test_urls = [
 
 
 @pytest.fixture
-def soup3():
+def soup3(monkeypatch):
+    monkeypatch.setenv("G_MESSAGES_DEBUG", "all")
+
     from gi import require_version
 
     gi.require_version("Soup", "3.0")
@@ -19,7 +21,8 @@ def soup3():
 
 
 @pytest.fixture
-def soup2():
+def soup2(monkeypatch):
+    monkeypatch.setenv("G_MESSAGES_DEBUG", "all")
     from gi import require_version
 
     gi.require_version("Soup", "2.4")
