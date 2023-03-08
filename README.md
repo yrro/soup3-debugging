@@ -7,7 +7,7 @@ To run the tests, you will need the Python packages `python-pytest` and
 `python-pytest` available to your system Python environment.
 
 Here's the output of running the tests on my machine. A [nicer HTML-formatted
-report](https://raw.github.com/yrro/soup3-debugging/master/report.html) is also
+report](https://raw.githack.com/yrro/soup3-debugging/master/report.html) is also
 available.
 
 ```
