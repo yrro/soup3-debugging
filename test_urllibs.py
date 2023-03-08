@@ -1,6 +1,6 @@
 import pytest 
 
-import gi
+import pycurl
 
 
 test_urls = [
@@ -52,6 +52,27 @@ def test_soup2(url, Soup2):
 
     ses = Soup2.Session()
     ses.send_message(mes)
+
+
+@pytest.mark.parametrize(
+    "version", [
+        pycurl.CURL_HTTP_VERSION_1_1,
+        pycurl.CURL_HTTP_VERSION_2,
+    ]
+)
+@pytest.mark.parametrize(
+    "url", test_urls
+)
+def test_curl(url, version):
+    from io import BytesIO
+
+    buffer = BytesIO()
+    c = pycurl.Curl()
+    c.setopt(pycurl.HTTP_VERSION, version)
+    c.setopt(c.URL, url)
+    c.setopt(c.WRITEDATA, buffer)
+    c.perform()
+    c.close()
 
 
 @pytest.mark.parametrize(
