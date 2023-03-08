@@ -11,44 +11,46 @@ test_urls = [
 
 
 @pytest.fixture
-def soup3(monkeypatch):
+def Soup3(monkeypatch):
     monkeypatch.setenv("G_MESSAGES_DEBUG", "all")
 
     from gi import require_version
 
     gi.require_version("Soup", "3.0")
 
+    from gi.repository import Soup
+    return Soup
 
 
 @pytest.fixture
-def soup2(monkeypatch):
+def Soup2(monkeypatch):
     monkeypatch.setenv("G_MESSAGES_DEBUG", "all")
+
     from gi import require_version
 
     gi.require_version("Soup", "2.4")
+
+    from gi.repository import Soup
+    return Soup
 
 
 @pytest.mark.parametrize(
     "url", test_urls
 )
-def test_soup3(url, soup3):
-    from gi.repository import Soup
+def test_soup3(url, Soup3):
+    mes = Soup3.Message.new_from_encoded_form("GET", url, "")
 
-    mes = Soup.Message.new_from_encoded_form("GET", url, "")
-
-    ses = Soup.Session()
+    ses = Soup3.Session()
     ses.send_and_read(mes)
 
 
 @pytest.mark.parametrize(
     "url", test_urls
 )
-def test_soup2(url, soup2):
-    from gi.repository import Soup
+def test_soup2(url, Soup2):
+    mes = Soup2.Message.new("GET", url)
 
-    mes = Soup.Message.new("GET", url)
-
-    ses = Soup.Session()
+    ses = Soup2.Session()
     ses.send_message(mes)
 
 
