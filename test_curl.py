@@ -11,8 +11,14 @@ from conftest import urls
 def curl(request):
     print(f"pycurl.version: {pycurl.version}")
     curl = pycurl.Curl()
-    curl.setopt(pycurl.HTTP_VERSION, request.param)
-    return curl
+    try:
+        curl.setopt(pycurl.HTTP_VERSION, request.param)
+    except pycurl.error as e:
+        if e.args[0] == pycurl.E_UNSUPPORTED_PROTOCOL:
+            pytest.skip(reason="curl error: E_UNSUPPORTED_PROTOCOL")
+        raise
+    else:
+        return curl
 
 @pytest.mark.parametrize(
     "curl", [
