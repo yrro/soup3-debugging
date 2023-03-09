@@ -1,3 +1,4 @@
+import os
 import pytest
 
 from conftest import urls
@@ -7,6 +8,9 @@ gi = pytest.importorskip("gi")
 @pytest.fixture
 def Soup(monkeypatch, request):
     monkeypatch.setenv("G_MESSAGES_DEBUG", "all")
+
+    if not "GNUTLS_DEBUG_LEVEL" in os.environ:
+        monkeypatch.setenv("GNUTLS_DEBUG_LEVEL", "3")
 
     try:
         gi.require_version("Soup", request.param)
