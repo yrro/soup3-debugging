@@ -16,7 +16,7 @@ def Soup3(monkeypatch):
 
     from gi import require_version
 
-    gi.require_version("Soup", "3.0")
+    require_version("Soup", "3.0")
 
     from gi.repository import Soup
     return Soup
@@ -28,7 +28,7 @@ def Soup2(monkeypatch):
 
     from gi import require_version
 
-    gi.require_version("Soup", "2.4")
+    require_version("Soup", "2.4")
 
     from gi.repository import Soup
     return Soup
