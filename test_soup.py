@@ -2,15 +2,14 @@ import pytest
 
 from conftest import urls
 
+gi = pytest.importorskip("gi")
 
 @pytest.fixture
 def Soup(monkeypatch, request):
     monkeypatch.setenv("G_MESSAGES_DEBUG", "all")
 
-    from gi import require_version
-
     try:
-        require_version("Soup", request.param)
+        gi.require_version("Soup", request.param)
     except ValueError as e:
         pytest.skip(str(e))
 
