@@ -52,6 +52,7 @@ def test_soup2(url, Soup):
 
 @pytest.fixture(scope="function")
 def curl(request):
+    print(f"pycurl.version: {pycurl.version}")
     curl = pycurl.Curl()
     curl.setopt(pycurl.HTTP_VERSION, request.param)
     return curl
