@@ -15,13 +15,12 @@ test_urls = [
 def Soup(monkeypatch, request):
     monkeypatch.setenv("G_MESSAGES_DEBUG", "all")
 
-    from gi import get_required_version, require_version
+    from gi import require_version
 
-    if rv := get_required_version("Soup"):
-        if rv != request.param:
-            pytest.skip(f"Soup {request.param} could not be loaded because Soup {rv} was loaded by a previous test")
-
-    require_version("Soup", request.param)
+    try:
+        require_version("Soup", request.param)
+    except ValueError as e:
+        pytest.skip(str(e))
 
     from gi.repository import Soup
     return Soup
