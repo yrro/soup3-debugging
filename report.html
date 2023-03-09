@@ -439,7 +439,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 08-Mar-2023 at 13:05:11 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 09-Mar-2023 at 14:23:19 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -455,8 +455,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.11.2</td></tr></table>
     <h2>Summary</h2>
-    <p>9 tests ran in 2.22 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">6 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">3 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>15 tests ran in 4.53 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">12 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">3 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">3 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -470,764 +470,849 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-name">test_urllibs.py::test_soup3[https://www.bing.com/]</td>
-          <td class="col-duration">0.20</td>
+          <td class="col-name">test_soup.py::test_soup3[https://www.bing.com/-3.0]</td>
+          <td class="col-duration">0.14</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">url = &#x27;https://www.bing.com/&#x27;, soup3 = None<br/><br/>    @pytest.mark.parametrize(<br/>        &quot;url&quot;, test_urls<br/>    )<br/>    def test_soup3(url, soup3):<br/>        from gi.repository import Soup<br/>    <br/>        mes = Soup.Message.new_from_encoded_form(&quot;GET&quot;, url, &quot;&quot;)<br/>    <br/>        ses = Soup.Session()<br/>&gt;       ses.send_and_read(mes)<br/><span class="error">E       gi.repository.GLib.GError: g-io-error-quark: Error receiving data: Connection reset by peer (44)</span><br/><br/>test_urllibs.py:40: Error<br/> ------------------------------Captured stdout call------------------------------ <br/>(process:1276832): GLib-GIO-DEBUG: 13:05:09.415: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
-(process:1276832): dconf-DEBUG: 13:05:09.415: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
-(process:1276832): dconf-DEBUG: 13:05:09.415: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
-(process:1276832): dconf-DEBUG: 13:05:09.415: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
-(process:1276832): dconf-DEBUG: 13:05:09.415: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
-(process:1276832): dconf-DEBUG: 13:05:09.415: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
-(process:1276832): GLib-GIO-DEBUG: 13:05:09.415: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
-(process:1276832): GLib-GIO-DEBUG: 13:05:09.416: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
-(process:1276832): dconf-DEBUG: 13:05:09.417: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
-(process:1276832): dconf-DEBUG: 13:05:09.417: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
-(process:1276832): dconf-DEBUG: 13:05:09.417: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
-(process:1276832): dconf-DEBUG: 13:05:09.417: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
-(process:1276832): dconf-DEBUG: 13:05:09.417: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
-(process:1276832): GLib-GIO-DEBUG: 13:05:09.519: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
-(process:1276832): GLib-Net-DEBUG: 13:05:09.519: CLIENT[0x2bba1c0]: Starting synchronous TLS handshake
-(process:1276832): GLib-Net-DEBUG: 13:05:09.519: CLIENT[0x2bba1c0]: TLS handshake thread starts
-(process:1276832): GLib-Net-DEBUG: 13:05:09.519: CLIENT[0x2bba1c0]: claiming operation OP_HANDSHAKE
-(process:1276832): GLib-Net-DEBUG: 13:05:09.519: CLIENT[0x2bba1c0]: claiming operation OP_HANDSHAKE succeeded
-(process:1276832): GLib-Net-DEBUG: 13:05:09.543: CLIENT[0x2bba1c0]: verifying peer certificate
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: TLS handshake thread succeeded
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: synchronous TLS handshake thread completed
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: finishing TLS handshake
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: TLS handshake has finished successfully
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: yielding operation OP_HANDSHAKE
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: starting to write 99 bytes to TLS connection
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: claiming operation OP_WRITE
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: claiming operation OP_WRITE succeeded
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: yielding operation OP_WRITE
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: successfully write 99 bytes to TLS connection
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: starting to read data from TLS connection
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: claiming operation OP_READ
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: claiming operation OP_READ succeeded
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: yielding operation OP_READ
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: successfully read 40 bytes from TLS connection
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: starting to read data from TLS connection
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: claiming operation OP_READ
-(process:1276832): GLib-Net-DEBUG: 13:05:09.577: CLIENT[0x2bba1c0]: claiming operation OP_READ succeeded
-(process:1276832): GLib-Net-DEBUG: 13:05:09.593: CLIENT[0x2bba1c0]: yielding operation OP_READ
-(process:1276832): GLib-Net-DEBUG: 13:05:09.593: CLIENT[0x2bba1c0]: reading data from TLS connection has failed: ERROR
-(process:1276832): GLib-Net-DEBUG: 13:05:09.593: CLIENT[0x2bba1c0]: starting to close the TLS connection
-(process:1276832): GLib-Net-DEBUG: 13:05:09.593: CLIENT[0x2bba1c0]: claiming operation OP_CLOSE_BOTH
-(process:1276832): GLib-Net-DEBUG: 13:05:09.593: CLIENT[0x2bba1c0]: claiming operation OP_CLOSE_BOTH succeeded
-(process:1276832): GLib-Net-DEBUG: 13:05:09.593: CLIENT[0x2bba1c0]: yielding operation OP_CLOSE_BOTH
-(process:1276832): GLib-Net-DEBUG: 13:05:09.593: CLIENT[0x2bba1c0]: error closing TLS connection: Error sending data: Broken pipe
+            <div class="log">url = &#x27;https://www.bing.com/&#x27;, Soup = &lt;IntrospectionModule &#x27;Soup&#x27; from &#x27;/usr/lib/x86_64-linux-gnu/girepository-1.0/Soup-3.0.typelib&#x27;&gt;<br/><br/>    @pytest.mark.parametrize(&quot;Soup&quot;, [&quot;3.0&quot;], indirect=True)<br/>    @pytest.mark.parametrize(<br/>        &quot;url&quot;, urls<br/>    )<br/>    def test_soup3(url, Soup):<br/>        mes = Soup.Message.new_from_encoded_form(&quot;GET&quot;, url, &quot;&quot;)<br/>    <br/>        ses = Soup.Session()<br/>&gt;       ses.send_and_read(mes)<br/><span class="error">E       gi.repository.GLib.GError: g-io-error-quark: Error receiving data: Connection reset by peer (44)</span><br/><br/>test_soup.py:29: Error<br/> ------------------------------Captured stdout call------------------------------ <br/>(process:1414222): GLib-GIO-DEBUG: 14:23:17.395: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
+(process:1414222): dconf-DEBUG: 14:23:17.395: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
+(process:1414222): dconf-DEBUG: 14:23:17.395: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
+(process:1414222): dconf-DEBUG: 14:23:17.395: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
+(process:1414222): dconf-DEBUG: 14:23:17.396: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
+(process:1414222): dconf-DEBUG: 14:23:17.396: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
+(process:1414222): GLib-GIO-DEBUG: 14:23:17.396: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
+(process:1414222): GLib-GIO-DEBUG: 14:23:17.396: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
+(process:1414222): dconf-DEBUG: 14:23:17.398: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
+(process:1414222): dconf-DEBUG: 14:23:17.398: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
+(process:1414222): dconf-DEBUG: 14:23:17.398: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
+(process:1414222): dconf-DEBUG: 14:23:17.398: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
+(process:1414222): dconf-DEBUG: 14:23:17.398: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
+(process:1414222): GLib-GIO-DEBUG: 14:23:17.416: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
+(process:1414222): GLib-Net-DEBUG: 14:23:17.416: CLIENT[0x26141e0]: Starting synchronous TLS handshake
+(process:1414222): GLib-Net-DEBUG: 14:23:17.416: CLIENT[0x26141e0]: TLS handshake thread starts
+(process:1414222): GLib-Net-DEBUG: 14:23:17.416: CLIENT[0x26141e0]: claiming operation OP_HANDSHAKE
+(process:1414222): GLib-Net-DEBUG: 14:23:17.417: CLIENT[0x26141e0]: claiming operation OP_HANDSHAKE succeeded
+(process:1414222): GLib-Net-DEBUG: 14:23:17.442: CLIENT[0x26141e0]: verifying peer certificate
+(process:1414222): GLib-Net-DEBUG: 14:23:17.484: CLIENT[0x26141e0]: TLS handshake thread succeeded
+(process:1414222): GLib-Net-DEBUG: 14:23:17.484: CLIENT[0x26141e0]: synchronous TLS handshake thread completed
+(process:1414222): GLib-Net-DEBUG: 14:23:17.484: CLIENT[0x26141e0]: finishing TLS handshake
+(process:1414222): GLib-Net-DEBUG: 14:23:17.484: CLIENT[0x26141e0]: TLS handshake has finished successfully
+(process:1414222): GLib-Net-DEBUG: 14:23:17.484: CLIENT[0x26141e0]: yielding operation OP_HANDSHAKE
+(process:1414222): GLib-Net-DEBUG: 14:23:17.484: CLIENT[0x26141e0]: starting to write 99 bytes to TLS connection
+(process:1414222): GLib-Net-DEBUG: 14:23:17.484: CLIENT[0x26141e0]: claiming operation OP_WRITE
+(process:1414222): GLib-Net-DEBUG: 14:23:17.484: CLIENT[0x26141e0]: claiming operation OP_WRITE succeeded
+(process:1414222): GLib-Net-DEBUG: 14:23:17.484: CLIENT[0x26141e0]: yielding operation OP_WRITE
+(process:1414222): GLib-Net-DEBUG: 14:23:17.484: CLIENT[0x26141e0]: successfully write 99 bytes to TLS connection
+(process:1414222): GLib-Net-DEBUG: 14:23:17.485: CLIENT[0x26141e0]: starting to read data from TLS connection
+(process:1414222): GLib-Net-DEBUG: 14:23:17.485: CLIENT[0x26141e0]: claiming operation OP_READ
+(process:1414222): GLib-Net-DEBUG: 14:23:17.485: CLIENT[0x26141e0]: claiming operation OP_READ succeeded
+(process:1414222): GLib-Net-DEBUG: 14:23:17.485: CLIENT[0x26141e0]: yielding operation OP_READ
+(process:1414222): GLib-Net-DEBUG: 14:23:17.485: CLIENT[0x26141e0]: successfully read 40 bytes from TLS connection
+(process:1414222): GLib-Net-DEBUG: 14:23:17.485: CLIENT[0x26141e0]: starting to read data from TLS connection
+(process:1414222): GLib-Net-DEBUG: 14:23:17.485: CLIENT[0x26141e0]: claiming operation OP_READ
+(process:1414222): GLib-Net-DEBUG: 14:23:17.485: CLIENT[0x26141e0]: claiming operation OP_READ succeeded
+(process:1414222): GLib-Net-DEBUG: 14:23:17.502: CLIENT[0x26141e0]: yielding operation OP_READ
+(process:1414222): GLib-Net-DEBUG: 14:23:17.502: CLIENT[0x26141e0]: reading data from TLS connection has failed: ERROR
+(process:1414222): GLib-Net-DEBUG: 14:23:17.502: CLIENT[0x26141e0]: starting to close the TLS connection
+(process:1414222): GLib-Net-DEBUG: 14:23:17.502: CLIENT[0x26141e0]: claiming operation OP_CLOSE_BOTH
+(process:1414222): GLib-Net-DEBUG: 14:23:17.502: CLIENT[0x26141e0]: claiming operation OP_CLOSE_BOTH succeeded
+(process:1414222): GLib-Net-DEBUG: 14:23:17.502: CLIENT[0x26141e0]: yielding operation OP_CLOSE_BOTH
+(process:1414222): GLib-Net-DEBUG: 14:23:17.502: CLIENT[0x26141e0]: error closing TLS connection: Error sending data: Broken pipe
 <br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-name">test_urllibs.py::test_soup3[https://www.google.com/]</td>
+          <td class="col-name">test_soup.py::test_soup3[https://www.google.com/-3.0]</td>
           <td class="col-duration">0.13</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">url = &#x27;https://www.google.com/&#x27;, soup3 = None<br/><br/>    @pytest.mark.parametrize(<br/>        &quot;url&quot;, test_urls<br/>    )<br/>    def test_soup3(url, soup3):<br/>        from gi.repository import Soup<br/>    <br/>        mes = Soup.Message.new_from_encoded_form(&quot;GET&quot;, url, &quot;&quot;)<br/>    <br/>        ses = Soup.Session()<br/>&gt;       ses.send_and_read(mes)<br/><span class="error">E       gi.repository.GLib.GError: g-tls-error-quark: Error reading data from TLS socket: The specified session has been invalidated for some reason. (1)</span><br/><br/>test_urllibs.py:40: Error<br/> ------------------------------Captured stdout call------------------------------ <br/>(process:1276840): GLib-GIO-DEBUG: 13:05:09.639: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
-(process:1276840): dconf-DEBUG: 13:05:09.640: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
-(process:1276840): dconf-DEBUG: 13:05:09.640: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
-(process:1276840): dconf-DEBUG: 13:05:09.640: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
-(process:1276840): dconf-DEBUG: 13:05:09.640: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
-(process:1276840): dconf-DEBUG: 13:05:09.640: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
-(process:1276840): GLib-GIO-DEBUG: 13:05:09.640: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
-(process:1276840): GLib-GIO-DEBUG: 13:05:09.641: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
-(process:1276840): dconf-DEBUG: 13:05:09.642: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
-(process:1276840): dconf-DEBUG: 13:05:09.643: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
-(process:1276840): dconf-DEBUG: 13:05:09.643: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
-(process:1276840): dconf-DEBUG: 13:05:09.643: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
-(process:1276840): dconf-DEBUG: 13:05:09.643: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
-(process:1276840): GLib-GIO-DEBUG: 13:05:09.673: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
-(process:1276840): GLib-Net-DEBUG: 13:05:09.673: CLIENT[0x2bc61c0]: Starting synchronous TLS handshake
-(process:1276840): GLib-Net-DEBUG: 13:05:09.673: CLIENT[0x2bc61c0]: TLS handshake thread starts
-(process:1276840): GLib-Net-DEBUG: 13:05:09.673: CLIENT[0x2bc61c0]: claiming operation OP_HANDSHAKE
-(process:1276840): GLib-Net-DEBUG: 13:05:09.673: CLIENT[0x2bc61c0]: claiming operation OP_HANDSHAKE succeeded
-(process:1276840): GLib-Net-DEBUG: 13:05:09.720: CLIENT[0x2bc61c0]: verifying peer certificate
-(process:1276840): GLib-Net-DEBUG: 13:05:09.736: CLIENT[0x2bc61c0]: TLS handshake thread succeeded
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: synchronous TLS handshake thread completed
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: finishing TLS handshake
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: TLS handshake has finished successfully
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: yielding operation OP_HANDSHAKE
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: starting to write 101 bytes to TLS connection
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: claiming operation OP_WRITE
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: claiming operation OP_WRITE succeeded
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: yielding operation OP_WRITE
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: successfully write 101 bytes to TLS connection
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: starting to read data from TLS connection
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: claiming operation OP_READ
-(process:1276840): GLib-Net-DEBUG: 13:05:09.737: CLIENT[0x2bc61c0]: claiming operation OP_READ succeeded
-(process:1276840): GLib-Net-DEBUG: 13:05:09.754: CLIENT[0x2bc61c0]: yielding operation OP_READ
-(process:1276840): GLib-Net-DEBUG: 13:05:09.754: CLIENT[0x2bc61c0]: successfully read 40 bytes from TLS connection
-(process:1276840): GLib-Net-DEBUG: 13:05:09.754: CLIENT[0x2bc61c0]: starting to read data from TLS connection
-(process:1276840): GLib-Net-DEBUG: 13:05:09.754: CLIENT[0x2bc61c0]: claiming operation OP_READ
-(process:1276840): GLib-Net-DEBUG: 13:05:09.754: CLIENT[0x2bc61c0]: claiming operation OP_READ succeeded
-(process:1276840): GLib-Net-DEBUG: 13:05:09.754: CLIENT[0x2bc61c0]: yielding operation OP_READ
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: successfully read 39 bytes from TLS connection
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: starting to read data from TLS connection
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: claiming operation OP_READ
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: claiming operation OP_READ succeeded
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: yielding operation OP_READ
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: successfully read 0 bytes from TLS connection
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: starting to read data from TLS connection
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: claiming operation OP_READ
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: claiming operation OP_READ succeeded
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: yielding operation OP_READ
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: reading data from TLS connection has failed: ERROR
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: starting to close the TLS connection
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: claiming operation OP_CLOSE_BOTH
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: claiming operation OP_CLOSE_BOTH succeeded
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: yielding operation OP_CLOSE_BOTH
-(process:1276840): GLib-Net-DEBUG: 13:05:09.755: CLIENT[0x2bc61c0]: the TLS connection has been closed successfully
+            <div class="log">url = &#x27;https://www.google.com/&#x27;, Soup = &lt;IntrospectionModule &#x27;Soup&#x27; from &#x27;/usr/lib/x86_64-linux-gnu/girepository-1.0/Soup-3.0.typelib&#x27;&gt;<br/><br/>    @pytest.mark.parametrize(&quot;Soup&quot;, [&quot;3.0&quot;], indirect=True)<br/>    @pytest.mark.parametrize(<br/>        &quot;url&quot;, urls<br/>    )<br/>    def test_soup3(url, Soup):<br/>        mes = Soup.Message.new_from_encoded_form(&quot;GET&quot;, url, &quot;&quot;)<br/>    <br/>        ses = Soup.Session()<br/>&gt;       ses.send_and_read(mes)<br/><span class="error">E       gi.repository.GLib.GError: g-tls-error-quark: Error reading data from TLS socket: The specified session has been invalidated for some reason. (1)</span><br/><br/>test_soup.py:29: Error<br/> ------------------------------Captured stdout call------------------------------ <br/>(process:1414229): GLib-GIO-DEBUG: 14:23:17.563: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
+(process:1414229): dconf-DEBUG: 14:23:17.563: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
+(process:1414229): dconf-DEBUG: 14:23:17.563: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
+(process:1414229): dconf-DEBUG: 14:23:17.563: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
+(process:1414229): dconf-DEBUG: 14:23:17.563: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
+(process:1414229): dconf-DEBUG: 14:23:17.563: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
+(process:1414229): GLib-GIO-DEBUG: 14:23:17.563: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
+(process:1414229): GLib-GIO-DEBUG: 14:23:17.564: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
+(process:1414229): dconf-DEBUG: 14:23:17.566: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
+(process:1414229): dconf-DEBUG: 14:23:17.566: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
+(process:1414229): dconf-DEBUG: 14:23:17.566: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
+(process:1414229): dconf-DEBUG: 14:23:17.566: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
+(process:1414229): dconf-DEBUG: 14:23:17.566: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
+(process:1414229): GLib-GIO-DEBUG: 14:23:17.587: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
+(process:1414229): GLib-Net-DEBUG: 14:23:17.587: CLIENT[0x26161e0]: Starting synchronous TLS handshake
+(process:1414229): GLib-Net-DEBUG: 14:23:17.588: CLIENT[0x26161e0]: TLS handshake thread starts
+(process:1414229): GLib-Net-DEBUG: 14:23:17.588: CLIENT[0x26161e0]: claiming operation OP_HANDSHAKE
+(process:1414229): GLib-Net-DEBUG: 14:23:17.588: CLIENT[0x26161e0]: claiming operation OP_HANDSHAKE succeeded
+(process:1414229): GLib-Net-DEBUG: 14:23:17.621: CLIENT[0x26161e0]: verifying peer certificate
+(process:1414229): GLib-Net-DEBUG: 14:23:17.637: CLIENT[0x26161e0]: TLS handshake thread succeeded
+(process:1414229): GLib-Net-DEBUG: 14:23:17.637: CLIENT[0x26161e0]: synchronous TLS handshake thread completed
+(process:1414229): GLib-Net-DEBUG: 14:23:17.637: CLIENT[0x26161e0]: finishing TLS handshake
+(process:1414229): GLib-Net-DEBUG: 14:23:17.637: CLIENT[0x26161e0]: TLS handshake has finished successfully
+(process:1414229): GLib-Net-DEBUG: 14:23:17.637: CLIENT[0x26161e0]: yielding operation OP_HANDSHAKE
+(process:1414229): GLib-Net-DEBUG: 14:23:17.637: CLIENT[0x26161e0]: starting to write 101 bytes to TLS connection
+(process:1414229): GLib-Net-DEBUG: 14:23:17.637: CLIENT[0x26161e0]: claiming operation OP_WRITE
+(process:1414229): GLib-Net-DEBUG: 14:23:17.637: CLIENT[0x26161e0]: claiming operation OP_WRITE succeeded
+(process:1414229): GLib-Net-DEBUG: 14:23:17.637: CLIENT[0x26161e0]: yielding operation OP_WRITE
+(process:1414229): GLib-Net-DEBUG: 14:23:17.637: CLIENT[0x26161e0]: successfully write 101 bytes to TLS connection
+(process:1414229): GLib-Net-DEBUG: 14:23:17.638: CLIENT[0x26161e0]: starting to read data from TLS connection
+(process:1414229): GLib-Net-DEBUG: 14:23:17.638: CLIENT[0x26161e0]: claiming operation OP_READ
+(process:1414229): GLib-Net-DEBUG: 14:23:17.638: CLIENT[0x26161e0]: claiming operation OP_READ succeeded
+(process:1414229): GLib-Net-DEBUG: 14:23:17.661: CLIENT[0x26161e0]: yielding operation OP_READ
+(process:1414229): GLib-Net-DEBUG: 14:23:17.661: CLIENT[0x26161e0]: successfully read 40 bytes from TLS connection
+(process:1414229): GLib-Net-DEBUG: 14:23:17.662: CLIENT[0x26161e0]: starting to read data from TLS connection
+(process:1414229): GLib-Net-DEBUG: 14:23:17.662: CLIENT[0x26161e0]: claiming operation OP_READ
+(process:1414229): GLib-Net-DEBUG: 14:23:17.662: CLIENT[0x26161e0]: claiming operation OP_READ succeeded
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: yielding operation OP_READ
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: successfully read 39 bytes from TLS connection
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: starting to read data from TLS connection
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: claiming operation OP_READ
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: claiming operation OP_READ succeeded
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: yielding operation OP_READ
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: successfully read 0 bytes from TLS connection
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: starting to read data from TLS connection
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: claiming operation OP_READ
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: claiming operation OP_READ succeeded
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: yielding operation OP_READ
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: reading data from TLS connection has failed: ERROR
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: starting to close the TLS connection
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: claiming operation OP_CLOSE_BOTH
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: claiming operation OP_CLOSE_BOTH succeeded
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: yielding operation OP_CLOSE_BOTH
+(process:1414229): GLib-Net-DEBUG: 14:23:17.664: CLIENT[0x26161e0]: the TLS connection has been closed successfully
 <br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-name">test_urllibs.py::test_soup3[https://www.bbc.co.uk/]</td>
-          <td class="col-duration">0.12</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">url = &#x27;https://www.bbc.co.uk/&#x27;, soup3 = None<br/><br/>    @pytest.mark.parametrize(<br/>        &quot;url&quot;, test_urls<br/>    )<br/>    def test_soup3(url, soup3):<br/>        from gi.repository import Soup<br/>    <br/>        mes = Soup.Message.new_from_encoded_form(&quot;GET&quot;, url, &quot;&quot;)<br/>    <br/>        ses = Soup.Session()<br/>&gt;       ses.send_and_read(mes)<br/><span class="error">E       gi.repository.GLib.GError: soup-session-error-quark: Could not parse HTTP response (0)</span><br/><br/>test_urllibs.py:40: Error<br/> ------------------------------Captured stdout call------------------------------ <br/>(process:1276845): GLib-GIO-DEBUG: 13:05:09.802: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
-(process:1276845): dconf-DEBUG: 13:05:09.802: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
-(process:1276845): dconf-DEBUG: 13:05:09.802: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
-(process:1276845): dconf-DEBUG: 13:05:09.802: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
-(process:1276845): dconf-DEBUG: 13:05:09.802: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
-(process:1276845): dconf-DEBUG: 13:05:09.802: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
-(process:1276845): GLib-GIO-DEBUG: 13:05:09.802: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
-(process:1276845): GLib-GIO-DEBUG: 13:05:09.803: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
-(process:1276845): dconf-DEBUG: 13:05:09.805: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
-(process:1276845): dconf-DEBUG: 13:05:09.805: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
-(process:1276845): dconf-DEBUG: 13:05:09.805: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
-(process:1276845): dconf-DEBUG: 13:05:09.805: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
-(process:1276845): dconf-DEBUG: 13:05:09.805: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
-(process:1276845): GLib-GIO-DEBUG: 13:05:09.826: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
-(process:1276845): GLib-Net-DEBUG: 13:05:09.827: CLIENT[0x2bc81e0]: Starting synchronous TLS handshake
-(process:1276845): GLib-Net-DEBUG: 13:05:09.827: CLIENT[0x2bc81e0]: TLS handshake thread starts
-(process:1276845): GLib-Net-DEBUG: 13:05:09.827: CLIENT[0x2bc81e0]: claiming operation OP_HANDSHAKE
-(process:1276845): GLib-Net-DEBUG: 13:05:09.827: CLIENT[0x2bc81e0]: claiming operation OP_HANDSHAKE succeeded
-(process:1276845): GLib-Net-DEBUG: 13:05:09.863: CLIENT[0x2bc81e0]: verifying peer certificate
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: TLS handshake thread succeeded
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: synchronous TLS handshake thread completed
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: finishing TLS handshake
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: TLS handshake has finished successfully
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: yielding operation OP_HANDSHAKE
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: starting to write 100 bytes to TLS connection
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: claiming operation OP_WRITE
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: claiming operation OP_WRITE succeeded
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: yielding operation OP_WRITE
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: successfully write 100 bytes to TLS connection
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: starting to read data from TLS connection
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: claiming operation OP_READ
-(process:1276845): GLib-Net-DEBUG: 13:05:09.883: CLIENT[0x2bc81e0]: claiming operation OP_READ succeeded
-(process:1276845): GLib-Net-DEBUG: 13:05:09.901: CLIENT[0x2bc81e0]: yielding operation OP_READ
-(process:1276845): GLib-Net-DEBUG: 13:05:09.901: CLIENT[0x2bc81e0]: successfully read 40 bytes from TLS connection
-(process:1276845): GLib-Net-DEBUG: 13:05:09.901: CLIENT[0x2bc81e0]: starting to read data from TLS connection
-(process:1276845): GLib-Net-DEBUG: 13:05:09.901: CLIENT[0x2bc81e0]: claiming operation OP_READ
-(process:1276845): GLib-Net-DEBUG: 13:05:09.901: CLIENT[0x2bc81e0]: claiming operation OP_READ succeeded
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: yielding operation OP_READ
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: successfully read 17 bytes from TLS connection
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: starting to read data from TLS connection
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: claiming operation OP_READ
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: claiming operation OP_READ succeeded
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: yielding operation OP_READ
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: successfully read 0 bytes from TLS connection
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: starting to read data from TLS connection
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: claiming operation OP_READ
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: claiming operation OP_READ succeeded
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: yielding operation OP_READ
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: successfully read 0 bytes from TLS connection
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: starting to close the TLS connection
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: claiming operation OP_CLOSE_BOTH
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: claiming operation OP_CLOSE_BOTH succeeded
-(process:1276845): GLib-Net-DEBUG: 13:05:09.905: CLIENT[0x2bc81e0]: yielding operation OP_CLOSE_BOTH
-(process:1276845): GLib-Net-DEBUG: 13:05:09.906: CLIENT[0x2bc81e0]: the TLS connection has been closed successfully
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_urllibs.py::test_soup2[https://www.bing.com/]</td>
-          <td class="col-duration">0.20</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>(process:1276850): GLib-GIO-DEBUG: 13:05:09.949: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
-(process:1276850): dconf-DEBUG: 13:05:09.949: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
-(process:1276850): dconf-DEBUG: 13:05:09.950: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
-(process:1276850): dconf-DEBUG: 13:05:09.950: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
-(process:1276850): dconf-DEBUG: 13:05:09.950: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
-(process:1276850): dconf-DEBUG: 13:05:09.950: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
-(process:1276850): GLib-GIO-DEBUG: 13:05:09.950: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
-(process:1276850): GLib-GIO-DEBUG: 13:05:09.950: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
-(process:1276850): dconf-DEBUG: 13:05:09.953: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
-(process:1276850): dconf-DEBUG: 13:05:09.953: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
-(process:1276850): dconf-DEBUG: 13:05:09.953: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
-(process:1276850): dconf-DEBUG: 13:05:09.953: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
-(process:1276850): dconf-DEBUG: 13:05:09.953: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
-(process:1276850): GLib-GIO-DEBUG: 13:05:09.955: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
-(process:1276850): GLib-Net-DEBUG: 13:05:09.989: CLIENT[0x2eda280]: Starting synchronous TLS handshake
-(process:1276850): GLib-Net-DEBUG: 13:05:09.989: CLIENT[0x2eda280]: TLS handshake thread starts
-(process:1276850): GLib-Net-DEBUG: 13:05:09.989: CLIENT[0x2eda280]: claiming operation OP_HANDSHAKE
-(process:1276850): GLib-Net-DEBUG: 13:05:09.989: CLIENT[0x2eda280]: claiming operation OP_HANDSHAKE succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.020: CLIENT[0x2eda280]: verifying peer certificate
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: TLS handshake thread succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: synchronous TLS handshake thread completed
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: finishing TLS handshake
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: TLS handshake has finished successfully
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: yielding operation OP_HANDSHAKE
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: starting to write 94 bytes to TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: claiming operation OP_WRITE
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: claiming operation OP_WRITE succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: yielding operation OP_WRITE
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: successfully write 94 bytes to TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.042: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: successfully read 2591 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: successfully read 128 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: successfully read 1500 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: successfully read 2 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.096: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.098: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.098: CLIENT[0x2eda280]: successfully read 128 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.098: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.098: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.098: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.098: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.098: CLIENT[0x2eda280]: successfully read 3974 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: successfully read 2 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: successfully read 128 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: successfully read 3974 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: successfully read 2 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: successfully read 128 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: successfully read 68 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: successfully read 2 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.099: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: successfully read 128 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: successfully read 3917 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: successfully read 2 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.104: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.105: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.105: CLIENT[0x2eda280]: successfully read 56 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.105: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.105: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.105: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: successfully read 128 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: successfully read 3974 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: successfully read 2 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.106: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: successfully read 128 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: successfully read 3974 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: successfully read 2 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.124: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: successfully read 128 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: successfully read 3974 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.125: CLIENT[0x2eda280]: successfully read 2 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.126: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.126: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.126: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: successfully read 128 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: successfully read 3974 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: successfully read 2 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: successfully read 128 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: successfully read 1597 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: successfully read 2 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: successfully read 5 bytes from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.127: CLIENT[0x2eda280]: reading data from TLS connection has failed: WOULD_BLOCK
-(process:1276850): GLib-Net-DEBUG: 13:05:10.128: CLIENT[0x2eda280]: starting to read data from TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.128: CLIENT[0x2eda280]: claiming operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.128: CLIENT[0x2eda280]: claiming operation OP_READ succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.128: CLIENT[0x2eda280]: yielding operation OP_READ
-(process:1276850): GLib-Net-DEBUG: 13:05:10.128: CLIENT[0x2eda280]: reading data from TLS connection has failed: WOULD_BLOCK
-(process:1276850): GLib-Net-DEBUG: 13:05:10.128: CLIENT[0x2eda280]: starting to close the TLS connection
-(process:1276850): GLib-Net-DEBUG: 13:05:10.128: CLIENT[0x2eda280]: claiming operation OP_CLOSE_BOTH
-(process:1276850): GLib-Net-DEBUG: 13:05:10.128: CLIENT[0x2eda280]: claiming operation OP_CLOSE_BOTH succeeded
-(process:1276850): GLib-Net-DEBUG: 13:05:10.128: CLIENT[0x2eda280]: yielding operation OP_CLOSE_BOTH
-(process:1276850): GLib-Net-DEBUG: 13:05:10.128: CLIENT[0x2eda280]: the TLS connection has been closed successfully
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_urllibs.py::test_soup2[https://www.google.com/]</td>
-          <td class="col-duration">0.19</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>(process:1276855): GLib-GIO-DEBUG: 13:05:10.160: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
-(process:1276855): dconf-DEBUG: 13:05:10.160: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
-(process:1276855): dconf-DEBUG: 13:05:10.160: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
-(process:1276855): dconf-DEBUG: 13:05:10.160: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
-(process:1276855): dconf-DEBUG: 13:05:10.160: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
-(process:1276855): dconf-DEBUG: 13:05:10.161: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
-(process:1276855): GLib-GIO-DEBUG: 13:05:10.161: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
-(process:1276855): GLib-GIO-DEBUG: 13:05:10.161: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
-(process:1276855): dconf-DEBUG: 13:05:10.165: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
-(process:1276855): dconf-DEBUG: 13:05:10.165: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
-(process:1276855): dconf-DEBUG: 13:05:10.165: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
-(process:1276855): dconf-DEBUG: 13:05:10.165: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
-(process:1276855): dconf-DEBUG: 13:05:10.165: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
-(process:1276855): GLib-GIO-DEBUG: 13:05:10.166: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
-(process:1276855): GLib-Net-DEBUG: 13:05:10.201: CLIENT[0x2ee4280]: Starting synchronous TLS handshake
-(process:1276855): GLib-Net-DEBUG: 13:05:10.201: CLIENT[0x2ee4280]: TLS handshake thread starts
-(process:1276855): GLib-Net-DEBUG: 13:05:10.201: CLIENT[0x2ee4280]: claiming operation OP_HANDSHAKE
-(process:1276855): GLib-Net-DEBUG: 13:05:10.201: CLIENT[0x2ee4280]: claiming operation OP_HANDSHAKE succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.234: CLIENT[0x2ee4280]: verifying peer certificate
-(process:1276855): GLib-Net-DEBUG: 13:05:10.237: CLIENT[0x2ee4280]: TLS handshake thread succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.237: CLIENT[0x2ee4280]: synchronous TLS handshake thread completed
-(process:1276855): GLib-Net-DEBUG: 13:05:10.237: CLIENT[0x2ee4280]: finishing TLS handshake
-(process:1276855): GLib-Net-DEBUG: 13:05:10.237: CLIENT[0x2ee4280]: TLS handshake has finished successfully
-(process:1276855): GLib-Net-DEBUG: 13:05:10.237: CLIENT[0x2ee4280]: yielding operation OP_HANDSHAKE
-(process:1276855): GLib-Net-DEBUG: 13:05:10.237: CLIENT[0x2ee4280]: starting to write 96 bytes to TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.237: CLIENT[0x2ee4280]: claiming operation OP_WRITE
-(process:1276855): GLib-Net-DEBUG: 13:05:10.237: CLIENT[0x2ee4280]: claiming operation OP_WRITE succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.237: CLIENT[0x2ee4280]: yielding operation OP_WRITE
-(process:1276855): GLib-Net-DEBUG: 13:05:10.237: CLIENT[0x2ee4280]: successfully write 96 bytes to TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.238: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.238: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.238: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.305: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.305: CLIENT[0x2ee4280]: successfully read 1100 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: successfully read 128 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: successfully read 128 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: successfully read 119 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: successfully read 725 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.306: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: successfully read 1100 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: successfully read 1100 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: successfully read 1100 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: successfully read 1100 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.307: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: successfully read 1100 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: successfully read 118 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: successfully read 2 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: successfully read 128 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: successfully read 93 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: successfully read 2 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: successfully read 128 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: successfully read 128 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.308: CLIENT[0x2ee4280]: successfully read 796 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: successfully read 1052 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: successfully read 1052 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.309: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.324: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.324: CLIENT[0x2ee4280]: successfully read 1052 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.324: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.324: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.324: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: successfully read 1052 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: successfully read 1052 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: successfully read 1052 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.325: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.326: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.330: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.330: CLIENT[0x2ee4280]: successfully read 1052 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.330: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.330: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.330: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.330: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.330: CLIENT[0x2ee4280]: successfully read 1052 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.330: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.330: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.330: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: successfully read 1052 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: successfully read 979 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: successfully read 2 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: successfully read 5 bytes from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: reading data from TLS connection has failed: WOULD_BLOCK
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: starting to read data from TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_READ succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: yielding operation OP_READ
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: reading data from TLS connection has failed: WOULD_BLOCK
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: starting to close the TLS connection
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_CLOSE_BOTH
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: claiming operation OP_CLOSE_BOTH succeeded
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: yielding operation OP_CLOSE_BOTH
-(process:1276855): GLib-Net-DEBUG: 13:05:10.331: CLIENT[0x2ee4280]: the TLS connection has been closed successfully
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_urllibs.py::test_soup2[https://www.bbc.co.uk/]</td>
-          <td class="col-duration">0.23</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>(process:1276860): GLib-GIO-DEBUG: 13:05:10.364: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
-(process:1276860): dconf-DEBUG: 13:05:10.364: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
-(process:1276860): dconf-DEBUG: 13:05:10.365: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
-(process:1276860): dconf-DEBUG: 13:05:10.365: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
-(process:1276860): dconf-DEBUG: 13:05:10.365: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
-(process:1276860): dconf-DEBUG: 13:05:10.365: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
-(process:1276860): GLib-GIO-DEBUG: 13:05:10.365: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
-(process:1276860): GLib-GIO-DEBUG: 13:05:10.366: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
-(process:1276860): dconf-DEBUG: 13:05:10.369: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
-(process:1276860): dconf-DEBUG: 13:05:10.369: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
-(process:1276860): dconf-DEBUG: 13:05:10.369: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
-(process:1276860): dconf-DEBUG: 13:05:10.369: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
-(process:1276860): dconf-DEBUG: 13:05:10.369: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
-(process:1276860): GLib-GIO-DEBUG: 13:05:10.370: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
-(process:1276860): GLib-Net-DEBUG: 13:05:10.410: CLIENT[0x2ef0280]: Starting synchronous TLS handshake
-(process:1276860): GLib-Net-DEBUG: 13:05:10.410: CLIENT[0x2ef0280]: TLS handshake thread starts
-(process:1276860): GLib-Net-DEBUG: 13:05:10.410: CLIENT[0x2ef0280]: claiming operation OP_HANDSHAKE
-(process:1276860): GLib-Net-DEBUG: 13:05:10.410: CLIENT[0x2ef0280]: claiming operation OP_HANDSHAKE succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.466: CLIENT[0x2ef0280]: verifying peer certificate
-(process:1276860): GLib-Net-DEBUG: 13:05:10.469: CLIENT[0x2ef0280]: TLS handshake thread succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.469: CLIENT[0x2ef0280]: synchronous TLS handshake thread completed
-(process:1276860): GLib-Net-DEBUG: 13:05:10.469: CLIENT[0x2ef0280]: finishing TLS handshake
-(process:1276860): GLib-Net-DEBUG: 13:05:10.469: CLIENT[0x2ef0280]: TLS handshake has finished successfully
-(process:1276860): GLib-Net-DEBUG: 13:05:10.469: CLIENT[0x2ef0280]: yielding operation OP_HANDSHAKE
-(process:1276860): GLib-Net-DEBUG: 13:05:10.469: CLIENT[0x2ef0280]: starting to write 95 bytes to TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.469: CLIENT[0x2ef0280]: claiming operation OP_WRITE
-(process:1276860): GLib-Net-DEBUG: 13:05:10.470: CLIENT[0x2ef0280]: claiming operation OP_WRITE succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.470: CLIENT[0x2ef0280]: yielding operation OP_WRITE
-(process:1276860): GLib-Net-DEBUG: 13:05:10.470: CLIENT[0x2ef0280]: successfully write 95 bytes to TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.470: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.470: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.470: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.493: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.493: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.493: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.493: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.493: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.495: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.495: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.495: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.495: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.495: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.514: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.514: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.515: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.515: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.515: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.517: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.517: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.517: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.517: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.517: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.520: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.520: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.520: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.520: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.520: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.521: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.521: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.521: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.521: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.521: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.521: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.521: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.521: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.521: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.521: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.531: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.531: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.532: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.532: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.532: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.544: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.544: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.545: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.545: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.545: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.549: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.549: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.550: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.556: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.556: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.556: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.556: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.556: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.561: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.561: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.561: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.561: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.561: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.573: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.574: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.574: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.574: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.574: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.576: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.576: CLIENT[0x2ef0280]: successfully read 4096 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.576: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.576: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.576: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.576: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.576: CLIENT[0x2ef0280]: successfully read 1593 bytes from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: reading data from TLS connection has failed: WOULD_BLOCK
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: starting to read data from TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: claiming operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: claiming operation OP_READ succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: yielding operation OP_READ
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: reading data from TLS connection has failed: WOULD_BLOCK
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: starting to close the TLS connection
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: claiming operation OP_CLOSE_BOTH
-(process:1276860): GLib-Net-DEBUG: 13:05:10.577: CLIENT[0x2ef0280]: claiming operation OP_CLOSE_BOTH succeeded
-(process:1276860): GLib-Net-DEBUG: 13:05:10.578: CLIENT[0x2ef0280]: yielding operation OP_CLOSE_BOTH
-(process:1276860): GLib-Net-DEBUG: 13:05:10.578: CLIENT[0x2ef0280]: the TLS connection has been closed successfully
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_urllibs.py::test_urllib[https://www.bing.com/]</td>
-          <td class="col-duration">0.23</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_urllibs.py::test_urllib[https://www.google.com/]</td>
+          <td class="col-name">test_soup.py::test_soup3[https://www.bbc.co.uk/-3.0]</td>
           <td class="col-duration">0.17</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
+            <div class="log">url = &#x27;https://www.bbc.co.uk/&#x27;, Soup = &lt;IntrospectionModule &#x27;Soup&#x27; from &#x27;/usr/lib/x86_64-linux-gnu/girepository-1.0/Soup-3.0.typelib&#x27;&gt;<br/><br/>    @pytest.mark.parametrize(&quot;Soup&quot;, [&quot;3.0&quot;], indirect=True)<br/>    @pytest.mark.parametrize(<br/>        &quot;url&quot;, urls<br/>    )<br/>    def test_soup3(url, Soup):<br/>        mes = Soup.Message.new_from_encoded_form(&quot;GET&quot;, url, &quot;&quot;)<br/>    <br/>        ses = Soup.Session()<br/>&gt;       ses.send_and_read(mes)<br/><span class="error">E       gi.repository.GLib.GError: soup-session-error-quark: Could not parse HTTP response (0)</span><br/><br/>test_soup.py:29: Error<br/> ------------------------------Captured stdout call------------------------------ <br/>(process:1414234): GLib-GIO-DEBUG: 14:23:17.726: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
+(process:1414234): dconf-DEBUG: 14:23:17.726: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
+(process:1414234): dconf-DEBUG: 14:23:17.726: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
+(process:1414234): dconf-DEBUG: 14:23:17.726: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
+(process:1414234): dconf-DEBUG: 14:23:17.726: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
+(process:1414234): dconf-DEBUG: 14:23:17.726: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
+(process:1414234): GLib-GIO-DEBUG: 14:23:17.727: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
+(process:1414234): GLib-GIO-DEBUG: 14:23:17.727: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
+(process:1414234): dconf-DEBUG: 14:23:17.729: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
+(process:1414234): dconf-DEBUG: 14:23:17.729: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
+(process:1414234): dconf-DEBUG: 14:23:17.729: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
+(process:1414234): dconf-DEBUG: 14:23:17.729: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
+(process:1414234): dconf-DEBUG: 14:23:17.729: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
+(process:1414234): GLib-GIO-DEBUG: 14:23:17.749: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
+(process:1414234): GLib-Net-DEBUG: 14:23:17.750: CLIENT[0x26181e0]: Starting synchronous TLS handshake
+(process:1414234): GLib-Net-DEBUG: 14:23:17.750: CLIENT[0x26181e0]: TLS handshake thread starts
+(process:1414234): GLib-Net-DEBUG: 14:23:17.750: CLIENT[0x26181e0]: claiming operation OP_HANDSHAKE
+(process:1414234): GLib-Net-DEBUG: 14:23:17.750: CLIENT[0x26181e0]: claiming operation OP_HANDSHAKE succeeded
+(process:1414234): GLib-Net-DEBUG: 14:23:17.818: CLIENT[0x26181e0]: verifying peer certificate
+(process:1414234): GLib-Net-DEBUG: 14:23:17.841: CLIENT[0x26181e0]: TLS handshake thread succeeded
+(process:1414234): GLib-Net-DEBUG: 14:23:17.841: CLIENT[0x26181e0]: synchronous TLS handshake thread completed
+(process:1414234): GLib-Net-DEBUG: 14:23:17.841: CLIENT[0x26181e0]: finishing TLS handshake
+(process:1414234): GLib-Net-DEBUG: 14:23:17.842: CLIENT[0x26181e0]: TLS handshake has finished successfully
+(process:1414234): GLib-Net-DEBUG: 14:23:17.842: CLIENT[0x26181e0]: yielding operation OP_HANDSHAKE
+(process:1414234): GLib-Net-DEBUG: 14:23:17.842: CLIENT[0x26181e0]: starting to write 100 bytes to TLS connection
+(process:1414234): GLib-Net-DEBUG: 14:23:17.842: CLIENT[0x26181e0]: claiming operation OP_WRITE
+(process:1414234): GLib-Net-DEBUG: 14:23:17.842: CLIENT[0x26181e0]: claiming operation OP_WRITE succeeded
+(process:1414234): GLib-Net-DEBUG: 14:23:17.842: CLIENT[0x26181e0]: yielding operation OP_WRITE
+(process:1414234): GLib-Net-DEBUG: 14:23:17.842: CLIENT[0x26181e0]: successfully write 100 bytes to TLS connection
+(process:1414234): GLib-Net-DEBUG: 14:23:17.842: CLIENT[0x26181e0]: starting to read data from TLS connection
+(process:1414234): GLib-Net-DEBUG: 14:23:17.842: CLIENT[0x26181e0]: claiming operation OP_READ
+(process:1414234): GLib-Net-DEBUG: 14:23:17.842: CLIENT[0x26181e0]: claiming operation OP_READ succeeded
+(process:1414234): GLib-Net-DEBUG: 14:23:17.859: CLIENT[0x26181e0]: yielding operation OP_READ
+(process:1414234): GLib-Net-DEBUG: 14:23:17.859: CLIENT[0x26181e0]: successfully read 40 bytes from TLS connection
+(process:1414234): GLib-Net-DEBUG: 14:23:17.859: CLIENT[0x26181e0]: starting to read data from TLS connection
+(process:1414234): GLib-Net-DEBUG: 14:23:17.859: CLIENT[0x26181e0]: claiming operation OP_READ
+(process:1414234): GLib-Net-DEBUG: 14:23:17.859: CLIENT[0x26181e0]: claiming operation OP_READ succeeded
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: yielding operation OP_READ
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: successfully read 17 bytes from TLS connection
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: starting to read data from TLS connection
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: claiming operation OP_READ
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: claiming operation OP_READ succeeded
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: yielding operation OP_READ
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: successfully read 0 bytes from TLS connection
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: starting to read data from TLS connection
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: claiming operation OP_READ
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: claiming operation OP_READ succeeded
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: yielding operation OP_READ
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: successfully read 0 bytes from TLS connection
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: starting to close the TLS connection
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: claiming operation OP_CLOSE_BOTH
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: claiming operation OP_CLOSE_BOTH succeeded
+(process:1414234): GLib-Net-DEBUG: 14:23:17.863: CLIENT[0x26181e0]: yielding operation OP_CLOSE_BOTH
+(process:1414234): GLib-Net-DEBUG: 14:23:17.864: CLIENT[0x26181e0]: the TLS connection has been closed successfully
+<br/></div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">test_curl.py::test_curl[https://www.bing.com/-HTTP/3]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;/home/example.com/yrro/src/soup3-debugging/test_curl.py&#x27;, 23, &#x27;Skipped: curl error: E_UNSUPPORTED_PROTOCOL&#x27;)<br/> -----------------------------Captured stdout setup------------------------------ <br/>pycurl.version: PycURL/7.45.2 libcurl/7.88.1 GnuTLS/3.7.9 zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0) libssh2/1.9.0 nghttp2/1.52.0 librtmp/2.3
+<br/></div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">test_curl.py::test_curl[https://www.google.com/-HTTP/3]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;/home/example.com/yrro/src/soup3-debugging/test_curl.py&#x27;, 23, &#x27;Skipped: curl error: E_UNSUPPORTED_PROTOCOL&#x27;)<br/> -----------------------------Captured stdout setup------------------------------ <br/>pycurl.version: PycURL/7.45.2 libcurl/7.88.1 GnuTLS/3.7.9 zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0) libssh2/1.9.0 nghttp2/1.52.0 librtmp/2.3
+<br/></div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">test_curl.py::test_curl[https://www.bbc.co.uk/-HTTP/3]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;/home/example.com/yrro/src/soup3-debugging/test_curl.py&#x27;, 23, &#x27;Skipped: curl error: E_UNSUPPORTED_PROTOCOL&#x27;)<br/> -----------------------------Captured stdout setup------------------------------ <br/>pycurl.version: PycURL/7.45.2 libcurl/7.88.1 GnuTLS/3.7.9 zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0) libssh2/1.9.0 nghttp2/1.52.0 librtmp/2.3
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_curl.py::test_curl[https://www.bing.com/-HTTP/1.1]</td>
+          <td class="col-duration">0.31</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>pycurl.version: PycURL/7.45.2 libcurl/7.88.1 GnuTLS/3.7.9 zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0) libssh2/1.9.0 nghttp2/1.52.0 librtmp/2.3
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_curl.py::test_curl[https://www.bing.com/-HTTP/2]</td>
+          <td class="col-duration">0.21</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>pycurl.version: PycURL/7.45.2 libcurl/7.88.1 GnuTLS/3.7.9 zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0) libssh2/1.9.0 nghttp2/1.52.0 librtmp/2.3
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_curl.py::test_curl[https://www.google.com/-HTTP/1.1]</td>
+          <td class="col-duration">0.20</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>pycurl.version: PycURL/7.45.2 libcurl/7.88.1 GnuTLS/3.7.9 zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0) libssh2/1.9.0 nghttp2/1.52.0 librtmp/2.3
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_curl.py::test_curl[https://www.google.com/-HTTP/2]</td>
+          <td class="col-duration">0.20</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>pycurl.version: PycURL/7.45.2 libcurl/7.88.1 GnuTLS/3.7.9 zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0) libssh2/1.9.0 nghttp2/1.52.0 librtmp/2.3
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_curl.py::test_curl[https://www.bbc.co.uk/-HTTP/1.1]</td>
+          <td class="col-duration">0.65</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>pycurl.version: PycURL/7.45.2 libcurl/7.88.1 GnuTLS/3.7.9 zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0) libssh2/1.9.0 nghttp2/1.52.0 librtmp/2.3
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_curl.py::test_curl[https://www.bbc.co.uk/-HTTP/2]</td>
+          <td class="col-duration">0.45</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>pycurl.version: PycURL/7.45.2 libcurl/7.88.1 GnuTLS/3.7.9 zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0) libssh2/1.9.0 nghttp2/1.52.0 librtmp/2.3
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_soup.py::test_soup2[https://www.bing.com/-2.4]</td>
+          <td class="col-duration">0.23</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>(process:1414239): GLib-GIO-DEBUG: 14:23:17.925: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
+(process:1414239): dconf-DEBUG: 14:23:17.925: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
+(process:1414239): dconf-DEBUG: 14:23:17.925: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
+(process:1414239): dconf-DEBUG: 14:23:17.925: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
+(process:1414239): dconf-DEBUG: 14:23:17.926: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
+(process:1414239): dconf-DEBUG: 14:23:17.926: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
+(process:1414239): GLib-GIO-DEBUG: 14:23:17.926: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
+(process:1414239): GLib-GIO-DEBUG: 14:23:17.926: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
+(process:1414239): GLib-GIO-DEBUG: 14:23:17.927: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
+(process:1414239): dconf-DEBUG: 14:23:17.928: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
+(process:1414239): dconf-DEBUG: 14:23:17.929: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
+(process:1414239): dconf-DEBUG: 14:23:17.929: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
+(process:1414239): dconf-DEBUG: 14:23:17.929: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
+(process:1414239): dconf-DEBUG: 14:23:17.929: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
+(process:1414239): GLib-Net-DEBUG: 14:23:17.966: CLIENT[0x2930280]: Starting synchronous TLS handshake
+(process:1414239): GLib-Net-DEBUG: 14:23:17.967: CLIENT[0x2930280]: TLS handshake thread starts
+(process:1414239): GLib-Net-DEBUG: 14:23:17.967: CLIENT[0x2930280]: claiming operation OP_HANDSHAKE
+(process:1414239): GLib-Net-DEBUG: 14:23:17.967: CLIENT[0x2930280]: claiming operation OP_HANDSHAKE succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:17.992: CLIENT[0x2930280]: verifying peer certificate
+(process:1414239): GLib-Net-DEBUG: 14:23:18.016: CLIENT[0x2930280]: TLS handshake thread succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.016: CLIENT[0x2930280]: synchronous TLS handshake thread completed
+(process:1414239): GLib-Net-DEBUG: 14:23:18.016: CLIENT[0x2930280]: finishing TLS handshake
+(process:1414239): GLib-Net-DEBUG: 14:23:18.016: CLIENT[0x2930280]: TLS handshake has finished successfully
+(process:1414239): GLib-Net-DEBUG: 14:23:18.016: CLIENT[0x2930280]: yielding operation OP_HANDSHAKE
+(process:1414239): GLib-Net-DEBUG: 14:23:18.017: CLIENT[0x2930280]: starting to write 94 bytes to TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.017: CLIENT[0x2930280]: claiming operation OP_WRITE
+(process:1414239): GLib-Net-DEBUG: 14:23:18.017: CLIENT[0x2930280]: claiming operation OP_WRITE succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.017: CLIENT[0x2930280]: yielding operation OP_WRITE
+(process:1414239): GLib-Net-DEBUG: 14:23:18.017: CLIENT[0x2930280]: successfully write 94 bytes to TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.017: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.017: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.017: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.069: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.069: CLIENT[0x2930280]: successfully read 2532 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.069: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.069: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.069: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: successfully read 128 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: successfully read 1561 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: successfully read 2 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.071: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: successfully read 128 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: successfully read 3974 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: successfully read 2 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: successfully read 128 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: successfully read 3974 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: successfully read 2 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: successfully read 128 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: successfully read 37 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: successfully read 2 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.072: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.120: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.120: CLIENT[0x2930280]: successfully read 128 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.120: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.120: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.120: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.120: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.120: CLIENT[0x2930280]: successfully read 3917 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.120: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.120: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.120: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.120: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.121: CLIENT[0x2930280]: successfully read 2 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.121: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.121: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.121: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.121: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.121: CLIENT[0x2930280]: successfully read 56 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.121: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.121: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.121: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.124: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.124: CLIENT[0x2930280]: successfully read 128 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.124: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.124: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.124: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.124: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.124: CLIENT[0x2930280]: successfully read 3974 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: successfully read 2 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: successfully read 128 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: successfully read 3974 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: successfully read 2 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: successfully read 128 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: successfully read 3974 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: successfully read 2 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: successfully read 128 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.125: CLIENT[0x2930280]: successfully read 3974 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: successfully read 2 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: successfully read 128 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: successfully read 1478 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: successfully read 2 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: successfully read 5 bytes from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: reading data from TLS connection has failed: WOULD_BLOCK
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: starting to read data from TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_READ succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: yielding operation OP_READ
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: reading data from TLS connection has failed: WOULD_BLOCK
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: starting to close the TLS connection
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_CLOSE_BOTH
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: claiming operation OP_CLOSE_BOTH succeeded
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: yielding operation OP_CLOSE_BOTH
+(process:1414239): GLib-Net-DEBUG: 14:23:18.126: CLIENT[0x2930280]: the TLS connection has been closed successfully
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_soup.py::test_soup2[https://www.google.com/-2.4]</td>
+          <td class="col-duration">0.18</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>(process:1414244): GLib-GIO-DEBUG: 14:23:18.170: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
+(process:1414244): dconf-DEBUG: 14:23:18.170: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
+(process:1414244): dconf-DEBUG: 14:23:18.171: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
+(process:1414244): dconf-DEBUG: 14:23:18.171: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
+(process:1414244): dconf-DEBUG: 14:23:18.171: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
+(process:1414244): dconf-DEBUG: 14:23:18.171: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
+(process:1414244): GLib-GIO-DEBUG: 14:23:18.171: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
+(process:1414244): GLib-GIO-DEBUG: 14:23:18.172: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
+(process:1414244): GLib-GIO-DEBUG: 14:23:18.172: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
+(process:1414244): dconf-DEBUG: 14:23:18.174: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
+(process:1414244): dconf-DEBUG: 14:23:18.174: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
+(process:1414244): dconf-DEBUG: 14:23:18.174: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
+(process:1414244): dconf-DEBUG: 14:23:18.174: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
+(process:1414244): dconf-DEBUG: 14:23:18.174: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
+(process:1414244): GLib-Net-DEBUG: 14:23:18.208: CLIENT[0x293a280]: Starting synchronous TLS handshake
+(process:1414244): GLib-Net-DEBUG: 14:23:18.208: CLIENT[0x293a280]: TLS handshake thread starts
+(process:1414244): GLib-Net-DEBUG: 14:23:18.208: CLIENT[0x293a280]: claiming operation OP_HANDSHAKE
+(process:1414244): GLib-Net-DEBUG: 14:23:18.208: CLIENT[0x293a280]: claiming operation OP_HANDSHAKE succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.235: CLIENT[0x293a280]: verifying peer certificate
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: TLS handshake thread succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: synchronous TLS handshake thread completed
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: finishing TLS handshake
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: TLS handshake has finished successfully
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: yielding operation OP_HANDSHAKE
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: starting to write 96 bytes to TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: claiming operation OP_WRITE
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: claiming operation OP_WRITE succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: yielding operation OP_WRITE
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: successfully write 96 bytes to TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.238: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.302: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.302: CLIENT[0x293a280]: successfully read 1100 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.302: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.302: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.302: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: successfully read 128 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: successfully read 972 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: successfully read 1100 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: successfully read 1100 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.303: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: successfully read 1100 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: successfully read 1100 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: successfully read 906 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: successfully read 2 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.304: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: successfully read 128 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: successfully read 128 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: successfully read 74 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: successfully read 2 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: successfully read 128 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: successfully read 128 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: successfully read 119 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: successfully read 677 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.305: CLIENT[0x293a280]: successfully read 1052 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.306: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.306: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.306: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.306: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.306: CLIENT[0x293a280]: successfully read 1052 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.306: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.306: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.306: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.320: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.320: CLIENT[0x293a280]: successfully read 1052 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.320: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.320: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.320: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.320: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.320: CLIENT[0x293a280]: successfully read 1052 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.320: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.320: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.320: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.320: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: successfully read 1052 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: successfully read 1052 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: successfully read 1052 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.321: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: successfully read 1052 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: successfully read 1052 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: successfully read 376 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: successfully read 2 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: successfully read 5 bytes from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: reading data from TLS connection has failed: WOULD_BLOCK
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: starting to read data from TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_READ succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: yielding operation OP_READ
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: reading data from TLS connection has failed: WOULD_BLOCK
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: starting to close the TLS connection
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_CLOSE_BOTH
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: claiming operation OP_CLOSE_BOTH succeeded
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: yielding operation OP_CLOSE_BOTH
+(process:1414244): GLib-Net-DEBUG: 14:23:18.322: CLIENT[0x293a280]: the TLS connection has been closed successfully
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_soup.py::test_soup2[https://www.bbc.co.uk/-2.4]</td>
+          <td class="col-duration">0.21</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>(process:1414249): GLib-GIO-DEBUG: 14:23:18.365: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
+(process:1414249): dconf-DEBUG: 14:23:18.365: watch_fast: &quot;/system/proxy/&quot; (establishing: 0, active: 0)
+(process:1414249): dconf-DEBUG: 14:23:18.365: watch_fast: &quot;/system/proxy/http/&quot; (establishing: 0, active: 0)
+(process:1414249): dconf-DEBUG: 14:23:18.366: watch_fast: &quot;/system/proxy/https/&quot; (establishing: 0, active: 0)
+(process:1414249): dconf-DEBUG: 14:23:18.366: watch_fast: &quot;/system/proxy/ftp/&quot; (establishing: 0, active: 0)
+(process:1414249): dconf-DEBUG: 14:23:18.366: watch_fast: &quot;/system/proxy/socks/&quot; (establishing: 0, active: 0)
+(process:1414249): GLib-GIO-DEBUG: 14:23:18.366: _g_io_module_get_default: Found default implementation gnome (GProxyResolverGnome) for ‘gio-proxy-resolver’
+(process:1414249): GLib-GIO-DEBUG: 14:23:18.366: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus &lt; 2.73.3)
+(process:1414249): GLib-GIO-DEBUG: 14:23:18.366: _g_io_module_get_default: Found default implementation gnutls (GTlsBackendGnutls) for ‘gio-tls-backend’
+(process:1414249): dconf-DEBUG: 14:23:18.368: watch_established: &quot;/system/proxy/&quot; (establishing: 1)
+(process:1414249): dconf-DEBUG: 14:23:18.368: watch_established: &quot;/system/proxy/http/&quot; (establishing: 1)
+(process:1414249): dconf-DEBUG: 14:23:18.368: watch_established: &quot;/system/proxy/https/&quot; (establishing: 1)
+(process:1414249): dconf-DEBUG: 14:23:18.368: watch_established: &quot;/system/proxy/ftp/&quot; (establishing: 1)
+(process:1414249): dconf-DEBUG: 14:23:18.368: watch_established: &quot;/system/proxy/socks/&quot; (establishing: 1)
+(process:1414249): GLib-Net-DEBUG: 14:23:18.419: CLIENT[0x2944240]: Starting synchronous TLS handshake
+(process:1414249): GLib-Net-DEBUG: 14:23:18.419: CLIENT[0x2944240]: TLS handshake thread starts
+(process:1414249): GLib-Net-DEBUG: 14:23:18.419: CLIENT[0x2944240]: claiming operation OP_HANDSHAKE
+(process:1414249): GLib-Net-DEBUG: 14:23:18.419: CLIENT[0x2944240]: claiming operation OP_HANDSHAKE succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.461: CLIENT[0x2944240]: verifying peer certificate
+(process:1414249): GLib-Net-DEBUG: 14:23:18.464: CLIENT[0x2944240]: TLS handshake thread succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.464: CLIENT[0x2944240]: synchronous TLS handshake thread completed
+(process:1414249): GLib-Net-DEBUG: 14:23:18.464: CLIENT[0x2944240]: finishing TLS handshake
+(process:1414249): GLib-Net-DEBUG: 14:23:18.464: CLIENT[0x2944240]: TLS handshake has finished successfully
+(process:1414249): GLib-Net-DEBUG: 14:23:18.464: CLIENT[0x2944240]: yielding operation OP_HANDSHAKE
+(process:1414249): GLib-Net-DEBUG: 14:23:18.464: CLIENT[0x2944240]: starting to write 95 bytes to TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.464: CLIENT[0x2944240]: claiming operation OP_WRITE
+(process:1414249): GLib-Net-DEBUG: 14:23:18.464: CLIENT[0x2944240]: claiming operation OP_WRITE succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.464: CLIENT[0x2944240]: yielding operation OP_WRITE
+(process:1414249): GLib-Net-DEBUG: 14:23:18.464: CLIENT[0x2944240]: successfully write 95 bytes to TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.465: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.465: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.465: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.489: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.489: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.490: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.490: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.490: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.490: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.490: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.490: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.490: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.490: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.510: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.510: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.510: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.510: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.510: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.512: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.512: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.512: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.512: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.512: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.516: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.516: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.516: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.516: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.516: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.516: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.516: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.516: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.516: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.516: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.521: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.521: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.521: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.521: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.521: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.530: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.530: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.530: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.530: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.530: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.535: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.535: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.535: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.535: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.535: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.537: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.537: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.538: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.538: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.538: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.541: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.541: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.542: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.542: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.542: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.542: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.542: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.542: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.542: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.542: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.543: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.543: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.544: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.544: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.544: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.544: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.544: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.544: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.544: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.544: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.547: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.547: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.547: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.547: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.547: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: successfully read 4096 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: successfully read 3146 bytes from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.548: CLIENT[0x2944240]: reading data from TLS connection has failed: WOULD_BLOCK
+(process:1414249): GLib-Net-DEBUG: 14:23:18.549: CLIENT[0x2944240]: starting to read data from TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.549: CLIENT[0x2944240]: claiming operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.549: CLIENT[0x2944240]: claiming operation OP_READ succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.549: CLIENT[0x2944240]: yielding operation OP_READ
+(process:1414249): GLib-Net-DEBUG: 14:23:18.549: CLIENT[0x2944240]: reading data from TLS connection has failed: WOULD_BLOCK
+(process:1414249): GLib-Net-DEBUG: 14:23:18.549: CLIENT[0x2944240]: starting to close the TLS connection
+(process:1414249): GLib-Net-DEBUG: 14:23:18.549: CLIENT[0x2944240]: claiming operation OP_CLOSE_BOTH
+(process:1414249): GLib-Net-DEBUG: 14:23:18.549: CLIENT[0x2944240]: claiming operation OP_CLOSE_BOTH succeeded
+(process:1414249): GLib-Net-DEBUG: 14:23:18.549: CLIENT[0x2944240]: yielding operation OP_CLOSE_BOTH
+(process:1414249): GLib-Net-DEBUG: 14:23:18.549: CLIENT[0x2944240]: the TLS connection has been closed successfully
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_urllib.py::test_urllib[https://www.bing.com/]</td>
+          <td class="col-duration">0.23</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
             <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_urllibs.py::test_urllib[https://www.bbc.co.uk/]</td>
-          <td class="col-duration">0.55</td>
+          <td class="col-name">test_urllib.py::test_urllib[https://www.google.com/]</td>
+          <td class="col-duration">0.18</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_urllib.py::test_urllib[https://www.bbc.co.uk/]</td>
+          <td class="col-duration">0.70</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
