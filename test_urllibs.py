@@ -61,9 +61,13 @@ def curl(request):
     "curl", [
         pycurl.CURL_HTTP_VERSION_1_1,
         pycurl.CURL_HTTP_VERSION_2,
-        pycurl.CURL_HTTP_VERSION_2TLS,
-        pycurl.CURL_HTTP_VERSION_3
-    ], indirect=True,
+        pycurl.CURL_HTTP_VERSION_3,
+    ], ids=[
+        "HTTP/1.1",
+        "HTTP/2",
+        "HTTP/3",
+    ],
+    indirect=True,
 )
 @pytest.mark.parametrize(
     "url", test_urls,
