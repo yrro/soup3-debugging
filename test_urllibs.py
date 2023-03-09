@@ -1,6 +1,5 @@
 import io
 
-import gi
 import pycurl
 import pytest
 
