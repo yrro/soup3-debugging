@@ -16,6 +16,7 @@ def build_curl(tls_version, http_version):
     except pycurl.error as e:
         if e.args[0] == pycurl.E_UNSUPPORTED_PROTOCOL:
             pytest.skip(reason="curl error: E_UNSUPPORTED_PROTOCOL")
+        raise
     else:
         return curl
 
